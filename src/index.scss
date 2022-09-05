@@ -1,0 +1,18 @@
+$white: rgb(238, 235, 221);
+$lightred: rgb(206, 18, 18);
+$darkred: rgb(129, 0, 0);
+$black: rgb(27, 23, 23);
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  background-color: $white;
+}

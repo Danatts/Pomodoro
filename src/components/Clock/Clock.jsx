@@ -5,13 +5,11 @@ import bell from '../../assets/audio/class-bell.mp3';
 function Clock() {
   let [time, setTime] = useState(3);
 
-  const refreshTimer = () => {
-    setTime(time -= 1);
-  }
-
   useEffect(() => {
     if (time > 0) {
-      const timerId = setInterval(refreshTimer, 1000);
+      const timerId = setInterval(() => {
+        setTime(time -= 1);
+      }, 1000);
       return () => clearInterval(timerId);
     };
   }, [time]);
@@ -19,7 +17,7 @@ function Clock() {
   useEffect(() => {
     if (time === 0) {
       const sound = new Audio(bell);
-      sound.play();
+      // sound.play();
       alert('Descansa');
     };
   }, [time]);
@@ -27,6 +25,7 @@ function Clock() {
   return (
     <div>
       <p>{ numToTime(time) }</p>
+      <button>Hola</button>
     </div>
   );
 }
