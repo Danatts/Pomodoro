@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { numToTime } from './Clock.services';
+import Alert from '../Alert/Alert';
+import useModal from '../../hooks/useModal';
 import bell from '../../assets/audio/class-bell.mp3';
 
 function Clock() {
   let [time, setTime] = useState(3);
+  const { toggle, show } = useModal();
 
   useEffect(() => {
     if (time > 0) {
@@ -16,16 +19,16 @@ function Clock() {
 
   useEffect(() => {
     if (time === 0) {
-      const sound = new Audio(bell);
+      // const sound = new Audio(bell);
       // sound.play();
-      alert('Descansa');
+      toggle()
     };
   }, [time]);
 
   return (
     <div>
       <p>{ numToTime(time) }</p>
-      <button>Hola</button>
+      { show ? <Alert toggle={toggle} /> : null}
     </div>
   );
 }
