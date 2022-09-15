@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+.button {
+  background-color: $white;
+  border: solid 0.2rem $black;
+  border-radius: 1rem;
+  color: $black;
+  font-size: 1.5rem;
+  padding: 1rem;
+}

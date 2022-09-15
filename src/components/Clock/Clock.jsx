@@ -11,7 +11,7 @@ function Clock() {
   useEffect(() => {
     if (time > 0) {
       const timerId = setInterval(() => {
-        setTime(time -= 1);
+        setTime((currentTime) => currentTime - 1);
       }, 1000);
       return () => clearInterval(timerId);
     };

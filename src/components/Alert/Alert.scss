@@ -14,11 +14,12 @@
   &__container {
     align-items: center;
     background-color: $white;
+    border: solid $black 0.2rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 40%;
-    border-radius: 2rem;
     width: 40%;
   }
 
