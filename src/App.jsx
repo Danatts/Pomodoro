@@ -1,11 +1,8 @@
-import Clock from './components/Clock/Clock';
+import Home from 'components/pages/Home/Home';
 
 function App() {
   return (
-    <div>
-      <h1>Pomodoro</h1>
-      <Clock />
-    </div>
+    <Home />
   );
 }
 

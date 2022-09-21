@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import 'index.scss';
 
 .alert {
   align-items: center;
@@ -11,16 +11,16 @@
   width: 100vw;
   z-index: 10;
 
-  &__container {
+  &__box {
     align-items: center;
     background-color: $white;
-    border: solid $black 0.2rem;
+    border: solid $black 0.5rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 40%;
-    width: 40%;
+    height: 30%;
+    width: 30%;
   }
 
   &__title {

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { numToTime } from './Clock.services';
-import Alert from '../Alert/Alert';
-import useModal from '../../hooks/useModal';
-import bell from '../../assets/audio/class-bell.mp3';
+import { numToTime } from 'components/Clock/Clock.services';
+import Alert from 'components/Alert/Alert';
+import useModal from 'hooks/useModal';
+import bell from 'assets/audio/class-bell.mp3';
 
 function Clock() {
   let [time, setTime] = useState(3);
