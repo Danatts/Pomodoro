@@ -4,11 +4,12 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 5rem;
+  height: 100vh;
+  position: relative;
+  top: 10rem;
 
   &__title {
     color: $darkred;
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }

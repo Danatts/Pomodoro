@@ -1,4 +1,4 @@
-import Clock from '../../Clock/Clock';
+import Clock from 'components/atoms/Clock/Clock';
 import './Home.scss';
 
 function Home() {
