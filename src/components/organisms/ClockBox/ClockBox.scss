@@ -1,0 +1,11 @@
+@import 'index.scss';
+
+.clockbox {
+  align-items: center;
+  background-color: $darkred;
+  border-radius: 20rem;
+  display: flex;
+  height: 40rem;
+  justify-content: center;
+  width: 60rem;
+}

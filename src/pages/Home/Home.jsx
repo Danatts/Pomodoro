@@ -1,11 +1,10 @@
-import Clock from 'components/atoms/Clock/Clock';
+import ClockBox from 'components/organisms/ClockBox/ClockBox';
 import './Home.scss';
 
 function Home() {
   return(
     <div className='home'>
-      <h1 className='home__title'>Pomodoro</h1>
-      <Clock />
+      <ClockBox/>
     </div>
   );
 }

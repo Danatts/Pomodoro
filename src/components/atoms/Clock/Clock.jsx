@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { numToTime } from 'components/atoms/Clock/Clock.services';
 import './Clock.scss';
 
-function Clock() {
-  const [time, setTime] = useState(9);
+function Clock({ sec }) {
+  const [time, setTime] = useState(sec);
   const [pause, setPause] = useState(false);
 
   useEffect(() => {
@@ -23,8 +23,8 @@ function Clock() {
   }, [time, pause]);
 
   return (
-    <div>
-      <span className="clock">{ numToTime(time) }</span>
+    <div className="clock">
+      <span className="clock__display">{ numToTime(time) }</span>
       <button onClick={() => setPause(!pause)}>Pause</button>
     </div>
   );
