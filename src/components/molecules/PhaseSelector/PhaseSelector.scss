@@ -1,0 +1,29 @@
+@import './index.scss';
+
+.phaseselector {
+  display: flex;
+  gap: 2rem;
+
+  &__button {
+    appearance: none;
+    visibility: hidden;
+  }
+
+  &__label {
+    align-items: center;
+    background-color: $red;
+    border: outset $darkred;
+    border-radius: 9rem;
+    display: flex;
+    font-size: 1.5rem;
+    height: 7rem;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    width: 7rem;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

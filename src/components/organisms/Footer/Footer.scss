@@ -1,11 +1,10 @@
-@import 'index.scss';
+@import './index.scss';
 
-.clockbox {
+.footer {
   align-items: center;
   background-color: $darkred;
-  border-radius: 20rem;
   display: flex;
-  height: 34rem;
+  font-size: 1.3rem;
+  height: 3vh;
   justify-content: center;
-  width: 51rem;
 }
