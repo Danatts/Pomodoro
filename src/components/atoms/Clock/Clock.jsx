@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { numToTime } from 'components/atoms/Clock/Clock.services';
+import playIco from 'assets/images/play.png';
+import pauseIco from 'assets/images/pause.png';
+import stopIco from 'assets/images/stop.png';
 import './Clock.scss';
 
 function Clock({ sec }) {
@@ -25,7 +28,14 @@ function Clock({ sec }) {
   return (
     <div className="clock">
       <span className="clock__display">{ numToTime(time) }</span>
-      <button onClick={() => setPause(!pause)}>Pause</button>
+      <div className="clock__control">
+        <span onClick={() => setPause(!pause)}>
+          <img className="clock__icon" src={pause ? playIco : pauseIco} />
+        </span>
+        <span onClick={() => setTime(15)}>
+          <img className="clock__icon" src={stopIco} />
+        </span>
+      </div>
     </div>
   );
 }

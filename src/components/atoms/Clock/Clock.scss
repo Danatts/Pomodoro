@@ -1,11 +1,27 @@
 @import 'index.scss';
 
 .clock {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+
+  &__control {
+    display: flex;
+    gap: 3rem;
+  }
 
   &__display {
     font-size: 10rem;
     font-weight: 900;
+  }
+
+  &__icon {
+    cursor: pointer;
+    height: 4rem;
+
+    &:active {
+      scale: 0.90;
+    }
   }
 }
