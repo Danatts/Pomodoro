@@ -16,14 +16,20 @@
     border-radius: 9rem;
     display: flex;
     font-size: 1.5rem;
+    font-weight: 700;
     height: 7rem;
     justify-content: center;
     padding: 1rem;
     text-align: center;
     width: 7rem;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
+      scale: 1.05;
+    }
+
+    &:active {
+      scale: 0.95;
     }
   }
 }
