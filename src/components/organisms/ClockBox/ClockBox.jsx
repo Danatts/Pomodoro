@@ -4,7 +4,7 @@ import './ClockBox.scss';
 function ClockBox() {
   return (
     <div className="clockbox">
-      <Clock sec={15} />
+      <Clock sec={10} />
     </div>
   );
 }

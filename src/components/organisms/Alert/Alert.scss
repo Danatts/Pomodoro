@@ -13,8 +13,8 @@
 
   &__box {
     align-items: center;
-    background-color: $white;
-    border: solid $black 0.5rem;
+    background-color: $red;
+    border: solid $darkred 0.5rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
   }
 
   &__title {
-    color: $black;
+    color: $white;
     font-size: 3rem;
   }
 }

@@ -1,10 +1,11 @@
 @import 'index.scss';
 
 .button {
-  background-color: $white;
-  border: solid 0.2rem $black;
+  background-color: $darkred;
+  border: solid 0rem $black;
   border-radius: 1rem;
-  color: $black;
+  color: $white;
+  cursor: pointer;
   font-size: 1.5rem;
   padding: 1rem;
 }

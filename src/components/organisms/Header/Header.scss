@@ -1,0 +1,10 @@
+@import './index.scss';
+
+.header {
+  align-items: center;
+  background-color: $darkred;
+  display: flex;
+  font-size: 1.3rem;
+  height: 7vh;
+  justify-content: center;
+}

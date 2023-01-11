@@ -1,4 +1,4 @@
-import 'components/Button/Button.scss';
+import 'components/atoms/Button/Button.scss';
 
 function Button({ action, text }) {
   return(
