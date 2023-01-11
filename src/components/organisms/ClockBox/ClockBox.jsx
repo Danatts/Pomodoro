@@ -1,10 +1,10 @@
 import Clock from "components/atoms/Clock/Clock";
 import './ClockBox.scss';
 
-function ClockBox() {
+function ClockBox({time}) {
   return (
     <div className="clockbox">
-      <Clock sec={10} />
+      <Clock sec={time} />
     </div>
   );
 }

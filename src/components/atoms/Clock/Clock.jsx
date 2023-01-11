@@ -9,7 +9,7 @@ import './Clock.scss';
 
 function Clock({ sec }) {
   const [time, setTime] = useState(sec);
-  const [pause, setPause] = useState(false);
+  const [pause, setPause] = useState(true);
   const {toggle, show} = useModal();
 
   const resetTime = () => {
@@ -33,11 +33,11 @@ function Clock({ sec }) {
       clearInterval(timerId)
     }
     return () => clearInterval(timerId);
-  }, [time, pause]);
+  }, [time, pause, sec]);
 
   return (
     <div className="clock">
-      {show === false ? <Alert toggle={toggle} /> : null}
+      {show ? <Alert toggle={toggle} /> : null}
       <span className="clock__display">{ numToTime(time) }</span>
       <div className="clock__control">
         <span onClick={() => setPause(!pause)}>
